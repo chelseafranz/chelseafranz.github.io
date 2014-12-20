@@ -29,40 +29,54 @@ var data = [
         color: "#FDB45C",
         highlight: "#FFC870",
         label: "HTML5/SCSS"
+    },
+    {
+        value: 5,
+        color: "HSLA(161, 41%, 64%, 1)",
+        highlight: "#FFC870",
+        label: "Angular/Backbone"
     }
 ];
 
 var options= {
     //Boolean - Whether we should show a stroke on each segment
-    segmentShowStroke : true,
-
-    //String - The colour of each segment stroke
-    segmentStrokeColor : "#fff",
-
-    //Number - The width of each segment stroke
-    segmentStrokeWidth : 2,
+    segmentShowStroke : false,
+    responsive: true,
 
     //Number - The percentage of the chart that we cut out of the middle
-    percentageInnerCutout : 50, // This is 0 for Pie charts
-
-    //Number - Amount of animation steps
+    percentageInnerCutout : 50, 
     animationSteps : 100,
-
-    //String - Animation easing effect
+    animateScale: false,
     animationEasing : "easeOutBounce",
-
-    //Boolean - Whether we animate the rotation of the Doughnut
     animateRotate : true,
 
-    //Boolean - Whether we animate scaling the Doughnut from the centre
-    animateScale : false,
-      scaleShowLabels: true,
-       scaleLabel: "<%=value%>",
-       responsive: true,
+  	showTooltips: true,
+  	tooltipTemplate: "<%if (label){%><%=label%>: <%}%><%= value %>",
+  	 tooltipEvents: ["mousemove", "touchstart", "touchmove", "click"],
+      
+       
+        scaleFontFamily: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
 
-    //String - A legend template
-    legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<segments.length; i++){%><li><span style=\"background-color:<%=segments[i].fillColor%>\"></span><%if(segments[i].label){%><%=segments[i].label%><%}%></li><%}%></ul>"
+   	
+   	 tooltipFontColor: "white",
+   	  tooltipFillColor: "rgba(0,0,0,0.8)",
+
 
 };
 
 new Chart(ctx).Doughnut(data, options);
+
+
+$('.wandrlst').on('click', function(){
+	$('.description').html("wandrlst:");
+});
+$('.codeRockstar').on('click', function(){
+	$('.description').html("Code Rockstar:");
+});
+$('.nimbus').on('click', function(){
+	$('.description').html("Curious Nimbus:");
+});
+$('.portfolio').on('click', function(){
+	$('.description').html("Portfolio:");
+});
+
