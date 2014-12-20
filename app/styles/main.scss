@@ -11,6 +11,10 @@
 
 $yellow: HSLA(58, 100%, 75%, 1);
 $height: 600px;
+@mixin buttons{
+    position: absolute;
+    left: 50%;
+}
 
 
 
@@ -32,6 +36,33 @@ a{
 .down{
   font-size: 50px;
   
+}
+.one{
+@include buttons;
+  top: 80%;
+  
+}
+.two{
+  @include buttons;
+  
+}
+.three{
+  @include buttons;
+
+}
+.four{
+  @include buttons;
+  
+}
+.five{
+  @include buttons;
+  
+}
+.white{
+  color: white;
+}
+.black{
+  color: black;
 }
 
 /*animate.css*/

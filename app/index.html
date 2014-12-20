@@ -34,7 +34,7 @@
     <div class="navBar">
         <span class="navBar nav">ABOUT</span>  <span class="navBar nav">WORK</span>  <span class="navBar nav">CV</span>  <span class="navBar nav">CONTACT</span>
        <a href="#about"> 
-        <div id="downFirst" class="down nextPage"><span class="fontawesome-chevron-down"></span></div>
+        <div id="downFirst" class="down nextPage one"><span class="fontawesome-chevron-down"></span></div>
        </a>
     </div>
     </div>
@@ -43,6 +43,8 @@
         <a name="about">
         <h1>ABOUT</h1>
 
+        <canvas id="myChart" width="300" height="300"></canvas>
+
        
         <div class="aboutMeText">
              <img class="me" src="https://s3.amazonaws.com/uploads.hipchat.com/31349/1240363/w7PlM8eDurZEBbk/upload.png"/>
@@ -50,7 +52,7 @@
             I am a big proponent of “go big or go home”. When I wanted to switch my majors in college, I left mid lecture, dropped the class and proceed to have my first (of many) quarter-life crisis. When I wanted to get into yoga I started with hot yoga. And when I wanted to get into web development I quit my job, said goodbye to my social life, and applied for the The Iron Yard (not necessarily in that order).</div>
 
         <a href="#work"> 
-        <span class="white down"><span class="fontawesome-chevron-down"></span></span>
+        <div class="white down two"><span class="fontawesome-chevron-down"></span></div>
        </a>
     </div>
 
@@ -60,7 +62,7 @@
 
 
         <a href="#cv"> 
-        <span class="black down"><span class="fontawesome-chevron-down"></span></span>
+        <div class="black down three"><span class="fontawesome-chevron-down"></span></div>
        </a>
 
     </div>
@@ -70,7 +72,7 @@
         <h1>CV</h1>
 
         <a href="#contact"> 
-        <span class=" white down"><span class="fontawesome-chevron-down"></span></span>
+        <div class="white down four"><span class="fontawesome-chevron-down"></span></div>
        </a>
         </div>
 
@@ -78,15 +80,18 @@
         <a name="contact">
         <h1>CONTACT</h1>
         <a href="#top"> 
-        <span class="black down"><span class="fontawesome-chevron-up"></span></span>
+        <div class="black down five"><span class="fontawesome-chevron-up"></span></div>
        </a>
     </div>
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="../bower_components/jquery/dist/jquery.js"></script>
     <script src="../bower_components/underscore/underscore.js"></script>
+     <script src="../bower_components/chartjs/docs/Chart.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
+
+
 
         <!-- build:js scripts/main.js -->
         <script src="scripts/main.js"></script>
