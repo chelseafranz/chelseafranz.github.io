@@ -4,10 +4,11 @@
 
 
 $yellow: HSLA(58, 100%, 75%, 1);
+$height: 600px;
 
 
 
-// Custom Styles
+/*hero unit section*/
 body {
   background: #fafafa;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -15,6 +16,7 @@ body {
 }
 
 .hero-unit {
+  height: $height;
  
   h1{
     text-align: center; 
@@ -25,7 +27,10 @@ body {
     text-align: center;
     
   }
-}
+} 
+/*end hero-unit*/
+
+
 .greeting{
   margin-bottom: -10px;
 }
@@ -38,12 +43,57 @@ body {
 
 .navBar{
   text-align: center;
+  margin-top: 50px;
   .nav{
     border: 1px solid black;
     padding: 8px 10px;
+    margin: 0px 15px;
   }
 }
 
 .nav:hover{
   background-color: $yellow;
 }
+
+
+
+/*about me section*/
+.aboutSection{
+  width: 100%;
+  height: $height;
+  background-color: black;
+  color: white;
+}
+
+/*end about me section*/
+
+
+
+
+/*work section*/
+
+/*end work section*/
+.workSection{
+  height: $height;
+}
+
+
+
+
+/*cv section*/
+.cvSection{
+  height: $height;
+  background-color: black;
+  color: white;
+}
+/*end cv section*/
+
+
+
+
+
+/*contact section*/
+.contactSection{
+  height: $height;
+}
+/*end contact section*/
