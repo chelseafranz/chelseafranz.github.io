@@ -14,32 +14,34 @@ $height: 600px;
 
 $wandrlst: ('https://s3.amazonaws.com/uploads.hipchat.com/31349/1240363/BMA9QUVp9qP3q2S/Screen%20Shot%202014-12-20%20at%202.30.28%20PM.png');
 $codeRockstar: ('https://s3.amazonaws.com/uploads.hipchat.com/31349/1240363/XqQnWothYq86uYW/Screen%20Shot%202014-12-20%20at%202.48.09%20PM.png');
-$nimbus: ('');
+$nimbus: ('https://s3.amazonaws.com/uploads.hipchat.com/31349/1240363/5wDQsGoovxciQuc/Screen%20Shot%202014-10-05%20at%209.37.54%20AM.png');
 $portfolio: ('');
 @mixin buttons{
     position: absolute;
     left: 50%;
 }
 @mixin work($url){
+
   background: 
    linear-gradient(
-      rgba(255, 0, 0, 0.45), 
-      rgba(255, 0, 0, 0.45)
+      HSLA(58, 100%, 75%, .35), 
+      HSLA(58, 100%, 75%, .35)
     ),
     url($url);
-    background-size: 140%;
+    padding: 5px;
+    margin: 0px 30px;
+    background-size: 100%;
     background-attachment: scroll;
     &:hover{
       background:
       linear-gradient(
-      rgba(255, 0, 0, 0.15), 
-      rgba(255, 0, 0, 0.15)
+      HSLA(58, 100%, 75%, .0), 
+      HSLA(58, 100%, 75%, .0)
     ),
  url($url);
       background-attachment: scroll;
-      background-size: 140%;
-      transition: background 3s;
-
+      background-size: 100%;
+     
     }
 }
 
@@ -179,8 +181,6 @@ a{
 
 
 /*work section*/
-
-/*end work section*/
 .workSection{
   height: $height;
 }
@@ -203,11 +203,15 @@ a{
 
 .nimbus{
 @include work($nimbus);
+background-position: -43px -31px;;
 }
 
 .portfolio{
 @include work($portfolio);
+
 }
+/*end work section*/
+
 /*cv section*/
 .cvSection{
   height: $height;
