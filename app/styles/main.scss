@@ -8,6 +8,27 @@
 [class*="fontawesome-"]:before {
   font-family: 'FontAwesome', sans-serif;
 }
+@import url(http://weloveiconfonts.com/api/?family=entypo|iconicfill|iconicstroke);
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+/* iconicfill */
+[class*="iconicfill-"]:before {
+  font-family: 'IconicFill', sans-serif;
+}
+
+/* iconicstroke */
+[class*="iconicstroke-"]:before {
+  font-family: 'IconicStroke', sans-serif;
+}
+
+
+
+
+
 
 $yellow: HSLA(58, 100%, 75%, 1);
 $height: 600px;
@@ -67,7 +88,9 @@ a{
 }
 .one{
 @include buttons;
-  top: 80%;
+  top: 94%;
+  left: 42%;
+
   
 }
 .two{
@@ -107,14 +130,20 @@ a{
 
 .hero-unit {
   height: $height;
+  background: url('https://s3.amazonaws.com/uploads.hipchat.com/31349/1240363/fGSORvz6lmlUpDb/10275530_10204456235595428_3667510480061076685_o%202.jpg');
+  background-position: -172px -21px;
+margin-top: -20px;
  
   h1{
     text-align: center; 
     font-size: 80px;
+    line-height: 60px;
+    margin-top: 0px; 
     
   }
   h2{
     text-align: center;
+    margin-bottom: 0px;
     
   }
 } 
@@ -122,13 +151,17 @@ a{
 
 
 .greeting{
-  margin-bottom: -10px;
+  padding-top: 10px;
+  margin-bottom: -50px;
+  color: black;
 }
 .name{
-  margin: 0 auto;
+  margin: -2px auto;
+  color: black;
 }
 .webDev{
   margin-top: 0px;
+  color: white;
 }
 
 .navBar{
@@ -136,9 +169,10 @@ a{
   margin-top: 50px;
   .nav{
     border: 1px solid black;
-    padding: 8px 10px;
-    margin: 0px 15px;
+    padding: 18px 10px;
+    margin: 10px 0px;
     color: black;
+    width: 100%;
   }
 }
 
@@ -229,3 +263,18 @@ background-position: -43px -31px;;
   height: $height;
 }
 /*end contact section*/
+
+.socialIcons{
+  font-size: 40px;
+  padding: 5px;
+
+  &:hover{
+    color:HSLA(59, 99%, 60%, 1);
+  }
+}
+
+
+
+
+
+
