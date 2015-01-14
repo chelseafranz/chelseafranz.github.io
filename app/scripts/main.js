@@ -34,3 +34,10 @@ $('.portfolio').on('click', function(){
 });
 
 
+
+
+
+$('.border1').on('mouseover', function(){
+    $('.border1').addClass('animated ')
+});
+
