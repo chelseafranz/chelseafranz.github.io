@@ -1,0 +1,458 @@
+ // Bourbon & Neat
+@import '../../bower_components/bourbon/dist/bourbon';
+@import '../../bower_components/neat/app/assets/stylesheets/neat';
+
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+@import url(http://weloveiconfonts.com/api/?family=entypo|iconicfill|iconicstroke);
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+/* iconicfill */
+[class*="iconicfill-"]:before {
+  font-family: 'IconicFill', sans-serif;
+}
+
+/* iconicstroke */
+[class*="iconicstroke-"]:before {
+  font-family: 'IconicStroke', sans-serif;
+}
+
+$sync: 'Syncopate';
+$ant: 'Anton';
+
+
+
+
+$yellow: HSLA(58, 100%, 75%, 1);
+$height: 670px;
+
+$wandrlst: ('https://s3.amazonaws.com/uploads.hipchat.com/31349/1240363/BMA9QUVp9qP3q2S/Screen%20Shot%202014-12-20%20at%202.30.28%20PM.png');
+$codeRockstar: ('https://s3.amazonaws.com/uploads.hipchat.com/31349/1240363/XqQnWothYq86uYW/Screen%20Shot%202014-12-20%20at%202.48.09%20PM.png');
+$nimbus: ('https://s3.amazonaws.com/uploads.hipchat.com/31349/1240363/5wDQsGoovxciQuc/Screen%20Shot%202014-10-05%20at%209.37.54%20AM.png');
+$portfolio: ('');
+@mixin buttons{
+    position: absolute;
+    left: 50%;
+}
+@mixin work($url){
+
+  background: 
+   linear-gradient(
+      HSLA(58, 100%, 75%, .35), 
+      HSLA(58, 100%, 75%, .35)
+    ),
+    url($url);
+    padding: 5px;
+    margin: 15px 5px;
+    background-size: 100%;
+    background-attachment: scroll;
+
+    &:hover{
+      background:
+      linear-gradient(
+      HSLA(58, 100%, 75%, .0), 
+      HSLA(58, 100%, 75%, .0)
+    ),
+ url($url);
+      background-attachment: scroll;
+      background-size: 100%;
+     
+    }
+}
+
+
+/*hero unit section*/
+
+a{
+  text-decoration: none;
+}
+
+
+.nextPage{
+  border: none;
+  background-color: white;
+}
+.down{
+  font-size: 50px;
+  
+}
+.one{
+@include buttons;
+  top: 94%;
+  left: 42%;
+
+  
+}
+.two{
+  @include buttons;
+  
+}
+.three{
+  @include buttons;
+
+}
+.four{
+  @include buttons;
+  
+}
+.five{
+  @include buttons;
+  
+}
+
+/*animate.css*/
+.bounce{
+  
+}
+
+#downFirst{
+ animation-iteration-count: 5; 
+}
+
+/*end animate.css*/
+a{
+  text-decoration: none;
+}
+
+.hero-unit {
+  height: $height;
+  background: url('https://s3.amazonaws.com/uploads.hipchat.com/31349/1240363/fGSORvz6lmlUpDb/10275530_10204456235595428_3667510480061076685_o%202.jpg');
+  background-position: -172px -21px;
+margin-top: -20px;
+ 
+  h1{
+    text-align: center; 
+    font-size: 80px;
+    line-height: 60px;
+    margin-top: 0px; 
+    
+  }
+  h2{
+    text-align: center;
+    margin-bottom: 0px;
+    font-family: $sync;
+    
+  }
+} 
+/*end hero-unit*/
+h1{
+  text-align: center;
+  font-family: $ant;
+}
+
+.greeting{
+  padding-top: 10px;
+  margin-bottom: -50px;
+  color: black;
+  
+}
+.name{
+  margin: -2px auto;
+  color: black;
+  animation-delay: .5s;
+}
+.webDev{
+  margin-top: 0px;
+  color: white;
+  animation-delay: 1s;
+}
+
+.navBar{
+  margin-top: 80px;
+  .nav{
+    margin-right: 50px;
+    text-align: center;
+    padding: 8px 20px;
+    color: white;
+    width: 100%;
+    font-size: 45px;
+  }
+}
+
+#myChart{
+  margin-left: 40px;
+  margin-top: 20px;
+}
+.nav:hover{
+ color:HSLA(59, 99%, 60%, 1);
+}
+
+
+
+/*about me section*/
+.aboutSection{
+  width: 100%;
+  height: $height;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.me{
+border-radius: 100%;
+height: 150px;
+margin: 0 auto;
+opacity: .5;
+padding: 5px;
+
+  &:hover{
+    opacity: .9;
+    transition: opacity 3s;
+  }
+}
+
+
+.aboutMeText{
+  width: 90%;
+  text-align: justify;
+  margin: 0 auto;
+  line-height: 23px;
+}
+/*end about me section*/
+
+
+
+
+/*work section*/
+.workSection{
+  height: $height;
+}
+
+.work{
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  border: 1px solid black;
+  display: inline-block;
+  
+}
+.wandrlst{
+@include work($wandrlst);
+}
+
+.codeRockstar{
+@include work($codeRockstar);
+
+}
+
+.nimbus{
+@include work($nimbus);
+background-position: -43px -31px;;
+}
+
+.portfolio{
+@include work($portfolio);
+
+}
+/*end work section*/
+
+/*cv section*/
+.cvSection{
+  height: $height;
+  background-color: black;
+  color: white;
+}
+/*end cv section*/
+
+
+
+
+
+/*contact section*/
+.contactSection{
+  height: $height;
+}
+/*end contact section*/
+
+.socialIcons{
+  font-size: 40px;
+  padding: 5px;
+  margin-top: 10px;
+
+  &:hover{
+    color:HSLA(59, 99%, 60%, 1);
+  }
+}
+
+
+@media (min-width: 380px){
+  .name{
+    color: white;
+    font-size: 80px;
+  }
+
+  .icons{
+    display: none;
+  }
+  .hero-unit{
+    margin-top: -100px;
+  }
+
+  .greeting{
+    padding-top: 80px;
+    color: white;
+    line-height: 90px;
+    font-size: 100px; 
+
+
+  }
+  .webDev{
+    color: black;
+    background-color:HSLA(59, 99%, 60%, 1);
+    width: 500px;
+    margin: 10px auto;
+  }
+/*  .navAbout{
+  font-family: $sync;
+  display: show;
+  
+  color: white;
+}
+.navWork{
+  font-family: $sync;
+  
+  color: white;
+}
+.navResume{
+  font-family: $sync;
+  display: show;
+  
+  color: white;
+}
+.navContact{
+  font-family: $sync;
+  display: show;
+  
+  color: white;
+}*/
+
+.menu{
+  font-family: $sync;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  letter-spacing: 5px;
+  padding: 25px;
+  display: inline-block;
+  width: 280px;
+  margin-left: 30px;
+  border: 4px solid white;
+  animation-delay: 1.7s;
+
+  &:hover{
+    color:HSLA(59, 99%, 60%, 1);
+
+  }
+}
+.navContact{
+  margin-left: 10px;
+}
+.contact{
+  margin-left: -10px;
+}
+.border{
+  border: 2px solid white;
+  padding: 15px;
+}
+
+.hero-unit{
+  background-size: 130%;
+}
+
+} /*end media query*/
+
+.sliding-menu-content {  
+  $base-accent-color: #477DCA !default;
+  $dark-gray: #333 !default;
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+/*menu button*/
+
+  $sliding-menu-border-color: $dark-gray;
+  $sliding-menu-background: lighten($sliding-menu-border-color, 5%);
+  $sliding-menu-color: #fff;
+  $sliding-menu-border: 1px solid $sliding-menu-border-color;
+  $sliding-menu-background-hover: $base-accent-color;
+  $sliding-menu-color-hover: #fff;
+
+  @include position(fixed, 0px auto 0px 0px);
+  @include size(220px 100%);
+  @include transform(translateX(-220px));
+  @include transition(all 0.25s linear);
+  background: $sliding-menu-background;
+  z-index: 999999;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+
+  li a {
+    border-bottom: $sliding-menu-border;
+    color: $sliding-menu-color;
+    display: block;
+    font-weight: bold;
+    padding: 1em;
+
+    &:hover {
+      background-color: $sliding-menu-background-hover;
+      color: $sliding-menu-color-hover;
+    }
+  }
+
+  &.is-visible {
+    @include transform(translateX(0));
+  }
+}
+
+.sliding-menu-fade-screen {
+  @include position(fixed, 0px 0px 0px 0px);
+  @include transition;
+  background: black;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999998;
+
+  &.is-visible {
+    opacity: 0.4;
+    visibility: visible;
+  }
+}
+
+.sliding-menu-button {
+  /*@include button(flat, #477DCA);*/
+  padding: 20px 16px 5px 20px;
+display: inline-block;
+cursor: pointer;
+position: absolute;
+top: 67px;
+left: -7px;
+outline: none;
+background-color: HSLA(192, 6%, 16%, .8);
+border: none;
+color: white;
+font-size: 40px;
+border-radius: 4px;
+line-height: 25px;
+}
+#social{
+  margin-top: -10px;
+  font-size: 10px;
+}
+
