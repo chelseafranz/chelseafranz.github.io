@@ -38,7 +38,7 @@ body {
     position:absolute;
     left:50%; /* centers the loading animation horizontally one the screen */
     top:50%; /* centers the loading animation vertically one the screen */
-    background-image: URL(img/status.gif); /* path to your loading animation */
+    background-image: URL(../img/status.gif); /* path to your loading animation */
     background-repeat:no-repeat;
     background-position:center;
     margin:-100px 0 0 -100px; /* is width and height divided by two */
@@ -264,7 +264,7 @@ a
   width: 0px
 }
 #content1 {
-  background-image: url(img/work.png );
+  background-image: url(../img/work.png );
   background-color: #32323c;
   background-attachment: fixed;
   border: none;
@@ -348,6 +348,7 @@ a
     font-size: small;
     border: 1px solid black;
     padding: 10px;
+    display: block;
 }
 .pMainImg{
     float: left;
@@ -363,6 +364,15 @@ a
     padding: 15px 15px 0;
     background-color: white;
     box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+}
+.yayImg{
+    float:left;
+    width:22%;
+    clear: right;
+    padding: 15px 15px 0;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+    height: 330px;
 }
 .position {
     background-color: #04C3B1;
