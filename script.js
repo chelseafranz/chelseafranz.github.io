@@ -129,6 +129,7 @@ $(document).scroll(function(){
       $("#line-3").css('width','89%');
       $("#line-4").css('width','72%');
       $("#line-5").css('width','65%');
+       $("#line-6").css('width','45%');
     } else {
       $("#line-1").css('width','0px');
       $("#line-2").css('width','0px');
