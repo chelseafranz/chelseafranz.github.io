@@ -50,6 +50,12 @@
 	background-image: url(../images/6.jpg);
 	background-size: 137%;
 }
+.ch-img-7{
+	background-image: url(../images/7.png);
+	background-size: 152%;
+background-position: bottom center;
+
+}
 .ch-info {
 	position: absolute;
 	background: rgba(63,147,147, 0.8);
