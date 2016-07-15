@@ -1036,6 +1036,9 @@ animation-duration:2s;
   width:100%;
 }
 }
-#portfolio1, #portfolio2, #portfolio3, #portfolio4, #portfolio5, #portfolio6, #portfolio7{
+#portfolio1, #portfolio4, #portfolio5, #portfolio6, {
     height: 75rem;
+}
+#portfolio3, #portfolio2,#portfolio7{
+    height: 78rem;
 }
