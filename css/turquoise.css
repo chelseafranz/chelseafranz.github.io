@@ -1042,3 +1042,19 @@ animation-duration:2s;
 #portfolio3, #portfolio2,#portfolio7{
     height: 78rem;
 }
+
+.hide {
+    display: none;
+}
+
+#about-me-box {
+   
+}
+
+.fa-envelope-o, .fa-mobile {
+    color: white;
+}
+
+#mobile {
+    margin-left: 40px;
+}
